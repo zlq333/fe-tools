@@ -1,0 +1,421 @@
+{
+  "name": "fe-tools",
+  "displayName": "fe-tools",
+  "description": "fe-tools for VS Code",
+  "version": "1.0.0",
+  "publisher": "zlqqq333",
+  "repository": "https://github.com/zlq333/fe-tools.git",
+  "engines": {
+    "vscode": "^1.32.0"
+  },
+  "icon": "src/images/icon.png",
+  "keywords": [
+    "fe",
+    "javascript",
+    "html",
+    "vue",
+    "vscode",
+    "snippet",
+    "api",
+    "reactivity",
+    "composition",
+    "function",
+    "syntax",
+    "template ",
+    "vuejs",
+    "vue.js"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.isPhone",
+        "title": "验证手机号码 1开头 11位数"
+      },
+      {
+        "command": "extension.isTel",
+        "title": "验证座机号"
+      },
+      {
+        "command": "extension.isInt",
+        "title": "验证是否为整数"
+      },
+      {
+        "command": "extension.isFloat",
+        "title": "验证是否为小数"
+      },
+      {
+        "command": "extension.isEmail",
+        "title": "验证邮箱"
+      },
+      {
+        "command": "extension.isPayPwd",
+        "title": "验证支付密码(6位数)"
+      },
+      {
+        "command": "extension.isNumberLetter",
+        "title": "验证是否为数字、字母组合"
+      },
+      {
+        "command": "extension.isNumberAndLetter",
+        "title": "验证是否为数字+字母组合(必须包含数字加字母)"
+      },
+      {
+        "command": "extension.isNumberLetterUnderline",
+        "title": "验证是否为数字、字母、下划线"
+      },
+      {
+        "command": "extension.isCapital",
+        "title": "验证是否为全大写字母"
+      },
+      {
+        "command": "extension.isBankCard",
+        "title": "验证是否为合法的银行卡"
+      },
+      {
+        "command": "extension.isPlate",
+        "title": "验证是否为合法的车牌号"
+      },
+      {
+        "command": "extension.isCompanyCode",
+        "title": "验证是否为合法的社会统一信用代码"
+      },
+      {
+        "command": "extension.isIdCard",
+        "title": "验证是否为合法的身份证"
+      },
+      {
+        "command": "extension.isUrl",
+        "title": "验证是否为url地址"
+      },
+      {
+        "command": "extension.isDate",
+        "title": "验证日期格式(YYYY-MM-DD hh:mm:ss)"
+      },
+      {
+        "command": "extension.openIndexOf",
+        "title": "产品原型"
+      },
+      {
+        "command": "extension.openServe",
+        "title": "内网服务汇总"
+      },
+      {
+        "command": "extension.openKdocs",
+        "title": "金山文档团队空间"
+      },
+      {
+        "command": "extension.openYuque",
+        "title": "语雀"
+      },
+      {
+        "command": "extension.openOA",
+        "title": "wyyt-OA"
+      },
+      {
+        "command": "extension.openWyyt",
+        "title": "wyyt-导航系统"
+      },
+      {
+        "command": "extension.openJenkins",
+        "title": "内网jenkins"
+      },
+      {
+        "command": "extension.openGitlab",
+        "title": "gitLab"
+      },
+      {
+        "command": "extension.openIconfont",
+        "title": "阿里巴巴iconfont"
+      },
+      {
+        "command": "extension.openPlus",
+        "title": "element-plus"
+      },
+      {
+        "command": "extension.openElement",
+        "title": "element-ui"
+      },
+      {
+        "command": "extension.openVant",
+        "title": "vant-ui"
+      },
+      {
+        "command": "extension.openVue3js",
+        "title": "vue3网站汇总"
+      },
+      {
+        "command": "extension.openVue3",
+        "title": "vue3官网"
+      },
+      {
+        "command": "extension.openVue2",
+        "title": "vue2官网"
+      },
+      {
+        "command": "extension.openDaid",
+        "title": "身份证号码生成器"
+      },
+      {
+        "command": "extension.openJson",
+        "title": "JSON格式化"
+      },
+      {
+        "command": "extension.openLibrary",
+        "title": "组件库"
+      },
+      {
+        "command": "extension.cloneWeb",
+        "title": "web模板(vue3+ts+vite)"
+      },
+      {
+        "command": "extension.cloneH5",
+        "title": "h5模板(vue3(h5)+ts+vite)"
+      },
+      {
+        "command": "extension.cloneWebWebpack",
+        "title": "web webpack模板(vue3+h5+webpack)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "group": "navigation",
+          "submenu": "gitHubCloneBox"
+        }
+      ],
+      "editor/context": [
+        {
+          "when": "editorFocus",
+          "group": "navigation",
+          "submenu": "regExpBox"
+        },
+        {
+          "when": "editorFocus",
+          "group": "navigation",
+          "submenu": "linkHrefBox"
+        },
+        {
+          "group": "navigation",
+          "submenu": "gitHubCloneBox"
+        }
+      ],
+      "regExpBox": [
+        {
+          "command": "extension.isNumberLetter"
+        },
+        {
+          "command": "extension.isDate"
+        },
+        {
+          "command": "extension.isUrl"
+        },
+        {
+          "command": "extension.isIdCard"
+        },
+        {
+          "command": "extension.isCompanyCode"
+        },
+        {
+          "command": "extension.isPlate"
+        },
+        {
+          "command": "extension.isBankCard"
+        },
+        {
+          "command": "extension.isCapital"
+        },
+        {
+          "command": "extension.isNumberLetterUnderline"
+        },
+        {
+          "command": "extension.isNumberAndLetter"
+        },
+        {
+          "command": "extension.isNumberLetter"
+        },
+        {
+          "command": "extension.isPayPwd"
+        },
+        {
+          "command": "extension.isEmail"
+        },
+        {
+          "command": "extension.isFloat"
+        },
+        {
+          "command": "extension.isInt"
+        },
+        {
+          "command": "extension.isTel"
+        },
+        {
+          "command": "extension.isPhone"
+        }
+      ],
+      "linkHrefBox": [
+        {
+          "command": "extension.openLibrary"
+        },
+        {
+          "command": "extension.openJson"
+        },
+        {
+          "command": "extension.openDaid"
+        },
+        {
+          "command": "extension.openVue2"
+        },
+        {
+          "command": "extension.openVue3"
+        },
+        {
+          "command": "extension.openVue3js"
+        },
+        {
+          "command": "extension.openVant"
+        },
+        {
+          "command": "extension.openElement"
+        },
+        {
+          "command": "extension.openPlus"
+        },
+        {
+          "command": "extension.openIconfont"
+        },
+        {
+          "command": "extension.openGitlab"
+        },
+        {
+          "command": "extension.openWyyt"
+        },
+        {
+          "command": "extension.openOA"
+        },
+        {
+          "command": "extension.openYuque"
+        },
+        {
+          "command": "extension.openKdocs"
+        },
+        {
+          "command": "extension.openServe"
+        },
+        {
+          "command": "extension.openIndexOf"
+        }
+      ],
+      "gitHubCloneBox": [
+        {
+          "command": "extension.cloneWeb",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.cloneH5",
+          "group": "navigation"
+        },
+        {
+          "command": "extension.cloneWebWebpack",
+          "group": "navigation"
+        }
+      ]
+    },
+    "submenus": [
+      {
+        "id": "regExpBox",
+        "label": "使用正则表达式"
+      },
+      {
+        "id": "linkHrefBox",
+        "label": "打开页面"
+      },
+      {
+        "id": "gitHubCloneBox",
+        "label": "远程下载项目模板"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./src/snippet/html.json"
+      },
+      {
+        "language": "html",
+        "path": "./src/snippet/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/html.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/vue.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/typeScript.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./src/snippet/typeScript.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippet/typeScript.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/lifeCycle.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./src/snippet/lifeCycle.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippet/lifeCycle.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./src/snippet/array.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./src/snippet/array.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^5.2.6",
+    "@types/node": "^12.12.0",
+    "@types/vscode": "^1.32.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.0",
+    "@typescript-eslint/parser": "^4.16.0",
+    "@vscode/test-electron": "^1.6.1",
+    "eslint": "^7.21.0",
+    "glob": "^7.1.4",
+    "mocha": "^6.1.4",
+    "source-map-support": "^0.5.12",
+    "typescript": "^4.2.2"
+  },
+  "dependencies": {
+    "download-git-repo": "^3.0.2",
+    "fs-extra": "^10.0.0"
+  }
+}

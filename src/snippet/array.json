@@ -1,0 +1,87 @@
+{
+  "push": {
+    "prefix": "push",
+    "body": "push(${0});",
+    "description": "array push 末尾添加"
+  },
+  "pop": {
+    "prefix": "pop",
+    "body": "pop(${0});",
+    "description": "array pop 末尾删除"
+  },
+  "shift": {
+    "prefix": "shift",
+    "body": "shift(${0});",
+    "description": "array shift 第一个删除"
+  },
+  "unshift": {
+    "prefix": "unshift",
+    "body": "unshift(${0});",
+    "description": "array unshift 第一个添加"
+  },
+  "slice": {
+    "prefix": "slice",
+    "body": "slice(${0:start},${1:end});",
+    "description": "array slice 返回一个由start和end截取的新数组（包括start但不包括end）"
+  },
+  "splice": {
+    "prefix": "splice",
+    "body": "splice(${0:start},${1:count},${2:item});",
+    "description": "array splice 修改原数组 从start开始 删除count个 添加item"
+  },
+  "concat": {
+    "prefix": "concat",
+    "body": "concat(${0:arr1},${1:arr2});",
+    "description": "array concat 合并多个数组并返回新数组"
+  },
+  "join": {
+    "prefix": "join",
+    "body": "join(\"${0:,}\");",
+    "description": "array join 拼接"
+  },
+  "split": {
+    "prefix": "split",
+    "body": "split(\"${0:,}\");",
+    "description": "array split 切割"
+  },
+  "forEach": {
+    "prefix": "forEach",
+    "body": "forEach((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array forEach 循环"
+  },
+  "map": {
+    "prefix": "map",
+    "body": "map((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array map 创建一个新数组，其结果是该数组中的每个元素是调用一次提供的函数后的返回值"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": "filter((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array filter 创建一个新的数组，新数组中的元素是通过检查指定数组中符合条件的所有元素"
+  },
+  "every": {
+    "prefix": "every",
+    "body": "every((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array every 返回一个布尔值 测试一个数组内的所有元素是否都能通过某个指定函数的测试"
+  },
+  "some": {
+    "prefix": "some",
+    "body": "some((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array some 返回一个布尔值 测试一个数组内是不是有一个能通过某个指定函数的测试"
+  },
+  "find": {
+    "prefix": "find",
+    "body": "find((${1:item},${2:index}) => {\n\t${0}\n});",
+    "description": "array find 返回数组中满足提供的测试函数的第一个元素的值 否则返回 undefined"
+  },
+  "flat": {
+    "prefix": "flat",
+    "body": "flat((${1:count}) => {\n\t${0}\n});",
+    "description": "array flat 按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": "reduce((${1:prev},${2:cur},${3:index},${4:arr}) => {\n\t${0}\n});",
+    "description": "array reduce 对数组中的每个元素执行一个函数(升序执行)，将其结果汇总为单个返回值"
+  }
+}

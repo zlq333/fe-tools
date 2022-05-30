@@ -1,0 +1,52 @@
+{
+  "nextTick": {
+    "prefix": "ntk",
+    "body": "nextTick(() => {\n\t${0}\n});",
+    "description": "vue nextTick"
+  },
+  "computed": {
+    "prefix": "com",
+    "body": "const ${1:name} = computed(() => {\n\t${0}\n})",
+    "description": "vue computed"
+  },
+  "watch": {
+    "prefix": "wat",
+    "body": "watch((${1:newVal}:any,${2:oldVal}:any) => {\n\t${0}\n});",
+    "description": "vue watch"
+  },
+  "watchEffect": {
+    "prefix": "waf",
+    "body": "watchEffect(() => {\n\t${0}\n});",
+    "description": "vue watchEffect"
+  },
+  "onMounted": {
+    "prefix": "onm",
+    "body": "onMounted(() => {\n\t${0}\n});",
+    "description": "vue onMounted"
+  },
+  "onActivated": {
+    "prefix": "ona",
+    "body": "onActivated(() => {\n\t${0}\n});",
+    "description": "vue onActivated"
+  },
+  "ref": {
+    "prefix": "ref",
+    "body": "const ${1:name} = ref(${2});",
+    "description": "vue ref"
+  },
+  "reactive": {
+    "prefix": "rea",
+    "body": "const ${1:name} = reactive(${2});",
+    "description": "vue reactive"
+  },
+  "defineEmits": {
+    "prefix": "emit",
+    "body": "const emit = defineEmits([]);",
+    "description": "vue defineEmits"
+  },
+  "defineExpose": {
+    "prefix": "emit",
+    "body": "defineExpose({\n\t${0}\n})",
+    "description": "vue defineExpose"
+  }
+}
