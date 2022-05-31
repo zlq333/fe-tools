@@ -389,6 +389,10 @@
       {
         "language": "typescript",
         "path": "./src/snippet/array.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/selfUse.json"
       }
     ]
   },
