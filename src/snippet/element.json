@@ -1,0 +1,45 @@
+{
+  "el-input": {
+    "prefix": "el-input",
+    "scope": "vue",
+    "description": "el-input组件",
+    "body": [
+      "<el-input v-model.trim=\"${1:field}\" maxlength=\"20\" placeholder=\"请输入\" clearable></el-input>"
+    ]
+  },
+  "el-button": {
+    "prefix": "el-button",
+    "scope": "vue",
+    "description": "el-button组件",
+    "body": ["<el-button type=\"primary\" @click=\"${1}\">提交</el-button>"]
+  },
+  "el-radio": {
+    "prefix": "el-radio",
+    "scope": "vue",
+    "description": "el-radio",
+    "body": [
+      "<el-radio-group v-model=\"${1}\">\r",
+      "  <el-radio :label=\"1\">选项1</el-radio>\r",
+      "  <el-radio :label=\"2\">选项2</el-radio>\r",
+      "</el-radio-group>"
+    ]
+  },
+  "el-checkbox": {
+    "prefix": "el-checkbox",
+    "scope": "vue",
+    "description": "el-checkbox组件",
+    "body": [
+      "<el-checkbox v-model=\"${1}\" label=\"${2}\"> ${3} </el-checkbox>"
+    ]
+  },
+  "el-select": {
+    "prefix": "el-select",
+    "scope": "vue",
+    "description": "el-select组件",
+    "body": [
+      "<el-select v-model=\"${1}\" placeholder=\"请选择\" clearable filterable>\r",
+      "  <el-option v-for=\"(el, idx) in ${2:list}\" :key=\"idx\" :value=\"el.value\" :label=\"el.label\"></el-option>\r",
+      "</el-select>"
+    ]
+  }
+}

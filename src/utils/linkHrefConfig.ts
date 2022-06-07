@@ -107,4 +107,34 @@ export default [
     url: "componnetLibrary",
     title: "组件库",
   },
+  {
+    command: "extension.openUtils",
+    type: "img",
+    url: "utils",
+    title: "公用脚本工具库(utils)",
+  },
+  {
+    command: "extension.openCalc",
+    type: "img",
+    url: "utils",
+    title: "计算器(calc)",
+  },
+  {
+    command: "extension.openDirective",
+    type: "img",
+    url: "utils",
+    title: "自定义指令(directive)",
+  },
+  {
+    command: "extension.openFilter",
+    type: "img",
+    url: "utils",
+    title: "vue3过滤器(filter)",
+  },
+  {
+    command: "extension.openFormValid",
+    type: "img",
+    url: "utils",
+    title: "表单校验(formValid)",
+  },
 ];

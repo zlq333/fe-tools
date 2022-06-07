@@ -67,5 +67,53 @@
       "const tableUse = useTable({ tableOptions, axiosConfig: { url: api.${1} } });\r",
       "tableUse.search();"
     ]
+  },
+  "submit": {
+    "prefix": "submit",
+    "scope": "vue",
+    "description": "form表单提交",
+    "body": [
+      "const formDataRef: any = ref(null);",
+      "const submit = (type: any) => {\r",
+      "  formDataRef.value.validate(async (valid: boolean) => {\r",
+      "    if (valid) {\r",
+      "      let res = await XHR.post(api.${1}, { ...formData });\r",
+      "        ElMessage.success('操作成功');\r",
+      "      }\r",
+      "    }\r",
+      "  });\r",
+      "};"
+    ]
+  },
+  "confirm": {
+    "prefix": "el-confirm",
+    "scope": "vue",
+    "description": "el-confirm组件",
+    "body": [
+      "ElMessageBox.confirm('确认${1}？', '提示', {\r",
+      "  confirmButtonText: '确定',\r",
+      "  cancelButtonText: '取消',\r",
+      "  type: 'warning'\r",
+      "}).then(async () => {\r",
+      "  await XHR.post(api.${2}, { id: row.id });\r",
+      "  ElMessage.success('操作成功');\r",
+      "  useTableRes.search();\r",
+      "});"
+    ]
+  },
+  "el-dialog": {
+    "prefix": "el-dialog",
+    "scope": "vue",
+    "description": "el-dialog组件",
+    "body": [
+      "<el-dialog title=\"${1}\" v-model=\"dialogVisible\" width=\"60%\">\r",
+      "  <template #footer>\r",
+      "    <span class=\"dialog-footer\">\r",
+      "      <el-button @click=\"dialogVisible = false\">取消</el-button>\r",
+      "      <el-button type=\"primary\" @click=\"submit\">确定</el-button>\r",
+      "    </span>\r",
+      "  </template>\r",
+      "</el-dialog>"
+    ]
   }
 }

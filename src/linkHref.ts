@@ -61,7 +61,7 @@ export function createWebView(
         </body>
       </html>
       `;
-    } else {
+    } else if (item.type == "img") {
       content = `
       <!DOCTYPE html>
       <html lang="en">
@@ -104,6 +104,12 @@ export function createWebView(
           );
         }
       );
+    } else {
+      const htmlPath = path.resolve(
+        path.join(__filename, "..", "..", "src", "html", item.url + ".html")
+      );
+
+      content = fs.readFileSync(htmlPath, "utf-8");
     }
 
     webviewPanel.webview.html = content;

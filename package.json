@@ -8,7 +8,7 @@
   "engines": {
     "vscode": "^1.32.0"
   },
-  "icon": "src/images/icon.png",
+  "icon": "src/images/tools.png",
   "keywords": [
     "fe",
     "javascript",
@@ -171,6 +171,26 @@
         "title": "组件库"
       },
       {
+        "command": "extension.openUtils",
+        "title": "公用脚本工具库(utils)"
+      },
+      {
+        "command": "extension.openCalc",
+        "title": "计算器(calc)"
+      },
+      {
+        "command": "extension.openDirective",
+        "title": "自定义指令(directive)"
+      },
+      {
+        "command": "extension.openFilter",
+        "title": "vue3过滤器(filter)"
+      },
+      {
+        "command": "extension.openFormValid",
+        "title": "表单校验(formValid)"
+      },
+      {
         "command": "extension.cloneWeb",
         "title": "web模板(vue3+ts+vite)"
       },
@@ -260,6 +280,21 @@
         }
       ],
       "linkHrefBox": [
+        {
+          "command": "extension.openUtils"
+        },
+        {
+          "command": "extension.openCalc"
+        },
+        {
+          "command": "extension.openDirective"
+        },
+        {
+          "command": "extension.openFilter"
+        },
+        {
+          "command": "extension.openFormValid"
+        },
         {
           "command": "extension.openLibrary"
         },
@@ -359,20 +394,8 @@
         "path": "./src/snippet/vue.json"
       },
       {
-        "language": "vue",
-        "path": "./src/snippet/typeScript.json"
-      },
-      {
-        "language": "javascript",
-        "path": "./src/snippet/typeScript.json"
-      },
-      {
         "language": "typescript",
         "path": "./src/snippet/typeScript.json"
-      },
-      {
-        "language": "vue",
-        "path": "./src/snippet/lifeCycle.json"
       },
       {
         "language": "javascript",
@@ -393,6 +416,14 @@
       {
         "language": "vue",
         "path": "./src/snippet/selfUse.json"
+      },
+      {
+        "language": "html",
+        "path": "./src/snippet/element.json"
+      },
+      {
+        "language": "vue",
+        "path": "./src/snippet/element.json"
       }
     ]
   },
